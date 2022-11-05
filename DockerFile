@@ -1,6 +1,5 @@
 FROM openjdk:8-jdk-alpine
 ADD vpn-server.jar app.jar
-# 对外端口
 EXPOSE 16666
 ENTRYPOINT ["java","-jar"]
 CMD "app.jar"
